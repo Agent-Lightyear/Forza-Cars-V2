@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolls Royce Cullinan - Delivery-options</title>
+    <link rel="stylesheet" href="CSS/sclass2.css">
+    <style>
+        /* Ensure that the base image stays at its original size */
+        .product-info img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+        }
+
+        /* No change in the layout, but to update the base image */
+        #booking-form select, #booking-form textarea, #booking-form input {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* For the base image */
+        .base-image {
+            width: 100%; /* or a fixed value like 400px if you want to fix it */
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="IMG/logo2.png" alt="Logo">
+    </header>
+    <main>
+        <div class="pro-del">
+            <section class="product-info">
+                <h2>RR - Cullinan Delivery-options</h2>
+                <!-- Original Base Image -->
+                <img src="IMG/cullinan.jpg" class="base-image" id="baseImage" alt="Land Rover Defender">
+                <p>"Above and Beyond!"</p>
+            </section>
+
+            <section class="delivery-options">
+                <h2>Delivery Options</h2>
+                <ul>
+                    <li><strong>Standard Delivery:</strong> 7-10 business days. Free of charge.</li>
+                    <li><strong>Express Delivery:</strong> 3-5 business days. Additional cost applies.</li>
+                    <li><strong>White Glove Delivery:</strong> Premium service including inside delivery and setup. Additional cost applies.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Booking Form Section -->
+        <section id="booking">
+            <h2>Booking Request</h2>
+            <form id="booking-form" action="booking success.html" method="GET">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="car-series">Select Car Variant:</label>
+                <select id="car-series" name="car-series" required onchange="changeImage(event)">
+                    <option value="">--Please choose an option--</option>
+                    <option value="IMG/cullinanii.jpg">Cullinan Series II 6.7 L</option>
+                    <option value="IMG/cullinanbb.jpg">Cullinan Black Badge Series II V12</option>
+                </select>
+
+                <label for="Delivery-options">Select Delivery Option:</label>
+                <select id="delivery-options" name="delivery-options" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="standard">Standard Delivery</option>
+                    <option value="express">Express Delivery</option>
+                    <option value="white-glove">White Glove Delivery</option>
+                </select>
+        
+                <label for="message">Additional Message:</label>
+                <textarea id="message" name="message"></textarea>
+        
+                <button type="submit">Submit Booking Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Forza Cars. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function changeImage(event) {
+            const baseImage = document.getElementById("baseImage");
+            baseImage.src = event.target.value || "IMG/defender.png"; // Default image if nothing is selected
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi Car Dealership</title>
+    <link rel="stylesheet" href="CSS/audi.css">
+</head>
+<body>
+    <header>
+        <h1>Forza Cars : Audi </h1>
+        <nav>
+            <ul>
+                <li><a href="#electric">Electric Series</a></li>
+                <li><a href="#quattro">Quattro Series</a></li>
+                <li><a href="#sportback">Sportback Series</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="electric">
+            <h2>Electric Series</h2>
+            <div class="car-column">
+                <div class="car-card">
+                    <img src="IMG/electric1.jpg" alt="Audi Electric Car 1">
+                    <h3><a href=e-trongt.html>Audi E-tron GT</a></h3>
+                    <p>Price: $99,900</p>
+                </div>
+                <div class="car-card">
+                    <img src="IMG/electric2.jpg" alt="Audi Electric Car 2">
+                    <h3>Audi Q4 e-tron</h3>
+                    <p>Price: $45,000</p>
+                </div>
+                <!-- Add more electric cars here -->
+            </div>
+        </section>
+
+        <section id="quattro">
+            <h2>Quattro Series</h2>
+            <div class="car-column">
+                <div class="car-card">
+                    <img src="IMG/quattro1.jpg" alt="Audi Quattro Car 1">
+                    <h3>Audi Q5</h3>
+                    <p>Price: $52,900</p>
+                </div>
+                <div class="car-card">
+                    <img src="IMG/quattro2.jpg" alt="Audi Quattro Car 2">
+                    <h3>Audi Q7</h3>
+                    <p>Price: $62,000</p>
+                </div>
+                <!-- Add more quattro cars here -->
+            </div>
+        </section>
+
+        <section id="sportback">
+            <h2>Sportback Series</h2>
+            <div class="car-column">
+                <div class="car-card">
+                    <img src="IMG/sportback1.jpg" alt="Audi Sportback Car 1">
+                    <h3>Audi A5 Sportback</h3>
+                    <p>Price: $45,000</p>
+                </div>
+                <div class="car-card">
+                    <img src="IMG/sportback2.jpg" alt="Audi Sportback Car 2">
+                    <h3>Audi A7 Sportback</h3>
+                    <p>Price: $69,200</p>
+                </div>
+                <!-- Add more sportback cars here -->
+            </div>
+        </section>
+        <section id="booking">
+            <h2>Booking Request</h2>
+            <form id="booking-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+        
+                <label for="car-series">Select Car Series:</label>
+                <select id="car-series" name="car-series" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="electric">Electric Series</option>
+                    <option value="quattro">Quattro Series</option>
+                    <option value="sportback">Sportback Series</option>
+                </select>
+        
+                <label for="message">Additional Message:</label>
+                <textarea id="message" name="message"></textarea>
+        
+                <button type="submit">Submit Booking Request</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Audi Car Dealership. All rights reserved.</p>
+    </footer>
+</body>
+</html>

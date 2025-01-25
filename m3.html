@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The BMW M3 - Delivery-options</title>
+    <link rel="stylesheet" href="CSS/sclass2.css">
+     <!-- <link rel="stylesheet" href="etrongt.css"> -->
+</head>
+<body>
+    <header>
+        <img src="IMG/logo2.png">
+        <!-- <h1>Audi E-tron GT Delivery</h1> -->
+    </header>
+    <main>
+        <div class="pro-del">
+        <section class="product-info">
+            <h2>BMW M3 Delivery-options </a></h2>
+            <img src="IMG/m3.png" alt="Audi Electric">
+            <p>"The Ultimate Driving Machine" !</p>
+        </section>
+        <section class="delivery-options">
+            <h2>Delivery Options</h2>
+            <ul>
+                <li><strong>Standard Delivery:</strong> 7-10 business days. Free of charge.</li>
+                <li><strong>Express Delivery:</strong> 3-5 business days. Additional cost applies.</li>
+                <li><strong>White Glove Delivery:</strong> Premium service including inside delivery and setup. Additional cost applies.</li>
+            </ul>
+        </section>
+    </div>
+
+        <section id="booking">
+            <h2>Booking Request</h2>
+            <form id="booking-form" action="booking success.html" method="GET">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+        
+                <label for="car-series">Select Car Variant:</label>
+                <select id="car-series" name="car-series" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="xDrive">BMW 3 Series M340i xDrive</option>
+                    <option value="xDrive">Bmw 3 Series M330i xDrive</option>
+                </select>
+
+                <label for="Delivery-options">Select Delivery option:</label>
+                <select id="car-series" name="car-series" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="standard">Standard Delivery</option>
+                    <option value="RS Variant">Express Delivery</option>
+                    <option value="RS Variant">White Glove Delivery</option>
+
+                </select>
+        
+                <label for="message">Additional Message:</label>
+                <textarea id="message" name="message"></textarea>
+        
+                <button type="submit">Submit Booking Request</button>
+            </form>
+        </section>
+        
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Forza Cars. All rights reserved.</p>
+    </footer>
+</body>
+</html>

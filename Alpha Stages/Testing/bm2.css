@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #b300ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Hero Banner */
+#hero {
+    height: 400px;
+    background-image: url('IMG/Xmh.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Sidebar */
+#sidebar {
+    background: #000;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Car Section */
+.car-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.car-card {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 calc(33% - 20px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.car-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.new-tag {
+    background-color: #007bff;
+}
+
+.petrol-tag {
+    background-color: #ffc107;
+}
+
+.electric-tag {
+    background-color: #28a745;
+}
+
+.amg-tag {
+    background-color: #dc3545;
+}
+
+.luxury-tag {
+    background-color: #b300ff;
+}
+
+/* M Sport Logo */
+.m-sport-logo {
+    margin-top: 10px;
+}
+
+.m-sport-logo img {
+    max-width: 50px;
+    height: auto;
+}

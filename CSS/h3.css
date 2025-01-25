@@ -1,0 +1,47 @@
+/* Header Styling */
+header {
+    background-color: #1a1a1a; /* Dark background for the header */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px; /* Top and bottom padding */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between logo and other content */
+}
+
+header img {
+    width: 100px; /* Adjust the width to your desired size */
+    height: auto; /* Keep the aspect ratio */
+    margin-right: 20px; /* Add space between the logo and the title */
+    align-self: flex-start; /* Aligns the logo to the left */
+}
+
+
+header h1 {
+    font-size: 2.5em; /* Large header font size */
+    margin: 0; /* Ensure there's no additional margin */
+    flex-grow: 1; /* Allow the title to take remaining space */
+    text-align: center; /* Center the title */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    display: flex; /* Horizontally align the items */
+    margin: 0; /* Ensure no margin on the nav list */
+    padding: 0; /* Ensure no padding on the nav list */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space out the nav items */
+}
+
+nav ul li a {
+    color: #fff; /* White color for nav links */
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.3s; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #ff6600; /* Orange highlight on hover */
+    border-radius: 5px; /* Rounded corners for nav items */
+}

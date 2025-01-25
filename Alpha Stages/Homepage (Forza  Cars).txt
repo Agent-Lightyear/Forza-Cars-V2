@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership</title>
+    <link rel="stylesheet" href="CSS/h2.css">
+</head>
+<body>
+    <header>
+        <h1 text="Red">Welcome to Forza Cars : Where Elegance Meets Performance!</h1>
+        <nav>   
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="latest-models">
+            <h2>Our Latest Models</h2>
+            <p>Check out our latest car models and offers!</p>
+            <h3><a href="m2.html">Mercedes Benz</a></h3>
+            <h3><a href="m series.html">Bmw</a></h3>
+            <h3><a href="BMW.html">BMW Gran Limousines</a></h3>
+            <h3><a href="Rolls Royce.html">Rolls Royce</a></h3>
+            <h3><a href="audi.html">Audi</a></h3>
+            <h3><a href="volvo.html">Volvo</a></h3>
+            <h3><a href="porsche.html">Porsche</a></h3>
+            <h3><a href="landrover.html">Land Rover</a></h3>
+            <h3><a href="jaguar.html">Jaguar</a></h3>
+            <h3><a href="lexus.html">Lexus</a></h3>
+            <h3><a href="toyota.html">Toyota</a></h3>
+            <h3><a href="ford.html">Ford</a></h3>
+            <h3><a href="vw.html">Volkswagen</a></h3>
+        </section>
+        <section id="login">
+            <h2>Login to Your Account</h2>
+            <form action="dashboard.html" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Forza Cars. All rights reserved.</p>
+    </footer>
+</body>
+</html>

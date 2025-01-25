@@ -1,0 +1,176 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #000000; /* Luxurious black background */
+}
+
+/* Navigation Bar */
+/* Header and Navbar Styling */
+header {
+    background-color: #111;
+    background: transparent; /* Dark background */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+}
+
+nav .logo img {
+    height: 110px; /* Logo height */
+    width: 200px;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+    letter-spacing: 2px;
+    justify-content: space space-evenly;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #b300ff;
+}
+
+
+/* Hero Section */
+.hero {
+    background: url('../IMG/porsche-hero.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    object-fit: contain;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5em;
+    color: #FA2223;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    background-color: #FA2223;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Models Section */
+.models {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.models h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color:#FA2223;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.car-card {
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(250, 34, 35, 0.5);
+}
+
+.car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.car-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.4em;
+    color: #FA2223;
+}
+
+.car-card p {
+    color: #ccc;
+    margin: 0 10px 15px;
+}
+
+.car-card .btn {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    color: #FA2223;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,593 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway, sans-serif; /* Update to match Fusion Cars' style */
+    background-color: #000000; /* Light background color for a clean look */
+    color: #ffffff; /* Dark gray color for text */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+/* Transparent Header */
+/* Header Styling */
+header {
+    font-family: 'Raleway','sans-serif';
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0); /* Slightly transparent dark background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+/* Navbar Flexbox Layout */
+nav {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Logo on left, links on right */
+    padding: 10px 10%; /* Spacing */
+}
+
+nav .logo img {
+    height: 100px; /* Logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+nav ul {
+    display: flex;
+    list-style: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Spacing between links */
+    letter-spacing: 2px;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    font-size: 1.1em;
+    letter-spacing: 3px;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #ae07f6; /* Purple accent on hover */
+}
+
+/* Banner Section Styling */
+.banner {
+    background-image: url("h-banner.jpg"); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; /* Height of the banner */
+    position: relative; /* For positioning the overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2; /* To place content above the overlay */
+}
+
+.banner-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.banner-button {
+    padding: 10px 20px;
+    background-color: #ae07f6; /* Orange button matching brand color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.banner-button:hover {
+    background-color: #5d0085; /* Darker shade on hover */
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+    background-color: #272727b0; /* White background for main content */
+    margin: 20px auto;
+    max-width: 1200px; /* Center content with a max width */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.756); /* Subtle shadow for depth */
+}
+
+/* Latest Models Section */
+#latest-models {
+    margin-bottom: 30px; /* Space below the section */
+}
+
+#latest-models h2 {
+    font-size: 2em; /* Larger section title */
+    color: #ae07f6; /* Orange color for consistency */
+    text-align: center;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+#latest-models h3 {
+    font-size: 1.2em; /* Smaller font for model names */
+    margin: 10px 0;
+}
+
+#latest-models a {
+    color: #ffffff; /* Dark text color for links */
+    text-decoration: none;
+}
+
+#latest-models a:hover {
+    color: #ae07f6; /* Orange hover effect for model links */
+}
+
+/* Card Layout */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #fffefe;
+}
+
+.card a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #5d0085;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Login Section */
+#login {
+    background-color: #000000; /* Light gray background for login form */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+#login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login label {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+#login input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#login button {
+    padding: 10px;
+    background-color: #ae07f6; /* Orange button */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#login button:hover {
+    background-color: #ae07f6; /* Darker orange on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000000; /* Dark footer background */
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Banner Design */
+@media (max-width: 768px) {
+    .banner {
+        height: 250px; /* Adjusted height for smaller screens */
+    }
+    
+    .banner-content h2 {
+        font-size: 1.8em; /* Smaller font size */
+    }
+    
+    .banner-content p {
+        font-size: 1em; /* Smaller font size */
+    }
+    
+    .banner-button {
+        padding: 8px 16px; /* Smaller button size */
+    }
+}
+/* About Us Section */
+#about-us {
+    background-color: #000; /* Dark background for contrast */
+    color: #fff; /* White text */
+    padding: 50px 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-left {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-left .about-logo {
+    width: 500px; /* Adjust the size of the logo */
+}
+
+.about-right {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-right h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-right p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.about-right ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.about-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ae07f6; /* Button color */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Inventory*/
+#inventory {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+#inventory h2 {
+    text-align: center;
+    color: #ae07f6;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.card h3, .card p {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.card .banner-button {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #ae07f6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card .banner-button:hover {
+    background-color: #5d0085;
+}
+
+.card .car-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.card .car-details div {
+    flex: 1;
+    border-right: 1px solid #ae07f6; /* Adds vertical bar */
+    padding: 0 10px;
+}
+
+.card .car-details div:last-child {
+    border-right: none; /* Removes the bar from the last item */
+}
+
+.card .car-details h4 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1em;
+    color: #ae07f6;
+}
+
+.card .car-details p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+
+.about-button:hover {
+    background-color: #8a06d4;
+}
+
+/* Login Page */
+#login-section {
+    background-color: #1a1a1a;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.login-container {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #ae07f6;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ae07f6;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.login-form input::placeholder {
+    color: #ccc;
+}
+
+.banner-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ae07f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.banner-button:hover {
+    background-color: #5d0085;
+}
+
+.signup-link {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.signup-link a {
+    color: #ae07f6;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Sign up Page */
+#signup-section {
+    background-color: #1a1a1a;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.signup-container {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+.signup-container h2 {
+    color: #ae07f6;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.signup-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ae07f6;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.signup-form input::placeholder {
+    color: #ccc;
+}
+
+.banner-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ae07f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.banner-button:hover {
+    background-color: #5d0085;
+}
+
+.login-link {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.login-link a {
+    color: #ae07f6;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
